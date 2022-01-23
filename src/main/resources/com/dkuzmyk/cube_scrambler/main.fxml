@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="686.0" prefWidth="676.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dkuzmyk.cube_scrambler.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="618.0" prefWidth="632.0">
+         <children>
+            <Label layoutX="177.0" layoutY="31.0" text="Cube Word Scrambler">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <TextField fx:id="wordField" layoutX="147.0" layoutY="107.0" prefHeight="43.0" prefWidth="252.0" promptText="Insert word here" />
+            <Button fx:id="wordSubmit" layoutX="441.0" layoutY="114.0" mnemonicParsing="false" onAction="#wordSubmitAction" text="Submit" />
+            <AnchorPane layoutX="132.0" layoutY="187.0" prefHeight="318.0" prefWidth="372.0">
+               <children>
+                  <TextField fx:id="cube1" layoutX="95.0" prefHeight="36.0" prefWidth="270.0" promptText="Cube 1: eg: a,b,c,d,e,f" />
+                  <TextField fx:id="cube2" layoutX="95.0" layoutY="36.0" prefHeight="36.0" prefWidth="270.0" promptText="Cube 2: eg: a,b,c,d,e,f" />
+                  <TextField fx:id="cube3" layoutX="95.0" layoutY="72.0" prefHeight="36.0" prefWidth="270.0" promptText="Cube 3: eg: a,b,c,d,e,f" />
+                  <TextField fx:id="cube4" layoutX="95.0" layoutY="108.0" prefHeight="36.0" prefWidth="270.0" promptText="Cube 4: eg: a,b,c,d,e,f" />
+                  <TextField fx:id="cube5" layoutX="95.0" layoutY="144.0" prefHeight="36.0" prefWidth="270.0" promptText="Cube 5: eg: a,b,c,d,e,f" />
+                  <TextField fx:id="cube6" layoutX="95.0" layoutY="180.0" prefHeight="36.0" prefWidth="270.0" promptText="Cube 6: eg: a,b,c,d,e,f" />
+                  <CheckBox fx:id="cc1" layoutX="14.0" layoutY="5.0" mnemonicParsing="false" onAction="#cc1Action" prefHeight="26.0" prefWidth="29.0" />
+                  <CheckBox fx:id="cc2" layoutX="14.0" layoutY="41.0" mnemonicParsing="false" onAction="#cc2Action" prefHeight="26.0" prefWidth="29.0" />
+                  <CheckBox fx:id="cc3" layoutX="14.0" layoutY="77.0" mnemonicParsing="false" onAction="#cc3Action" prefHeight="26.0" prefWidth="29.0" />
+                  <CheckBox fx:id="cc4" layoutX="14.0" layoutY="113.0" mnemonicParsing="false" onAction="#cc4Action" prefHeight="26.0" prefWidth="29.0" />
+                  <CheckBox fx:id="cc5" layoutX="14.0" layoutY="149.0" mnemonicParsing="false" onAction="#cc5Action" prefHeight="26.0" prefWidth="29.0" />
+                  <CheckBox fx:id="cc6" layoutX="14.0" layoutY="185.0" mnemonicParsing="false" onAction="#cc6Action" prefHeight="26.0" prefWidth="29.0" />
+                  <Button fx:id="cubeSubmit" layoutX="139.0" layoutY="256.0" mnemonicParsing="false" onAction="#cubeSubmitAction" prefHeight="30.0" prefWidth="94.0" text="Submit" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="instructions" layoutY="-1.0" mnemonicParsing="false" onAction="#instructionsAction" text="Instructions" />
+            <ListView fx:id="resultView" layoutX="140.0" layoutY="497.0" prefHeight="130.0" prefWidth="357.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
